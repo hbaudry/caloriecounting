@@ -80,7 +80,7 @@ struct AnalyzeView: View {
                  ? "Il reste \(Int(store.todaysRemaining)) kcal"
                  : "Dépassement de \(Int(-store.todaysRemaining)) kcal")
                 .font(.caption)
-                .foregroundStyle(store.todaysRemaining >= 0 ? .secondary : .red)
+                .foregroundStyle(store.todaysRemaining >= 0 ? AnyShapeStyle(.secondary) : AnyShapeStyle(.red))
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding()
