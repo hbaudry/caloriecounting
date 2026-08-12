@@ -25,18 +25,17 @@ struct SettingsView: View {
                 Section {
                     Label("Reconnaissance sur l'appareil (Vision)", systemImage: "cpu")
                     LabeledContent("Aliments en base", value: "\(FoodDatabase.shared.foods.count)")
+                    HStack {
+                        Label("Modèle Food-101 dédié", systemImage: FoodRecognizer.hasDedicatedModel ? "checkmark.seal.fill" : "seal")
+                        Spacer()
+                        Text(FoodRecognizer.hasDedicatedModel ? "Actif" : "Classifieur intégré")
+                            .foregroundStyle(FoodRecognizer.hasDedicatedModel ? Color.green : Color.secondary)
+                            .font(.subheadline)
+                    }
                 } header: {
                     Text("Fonctionnement")
                 } footer: {
                     Text("L'app reconnaît les aliments hors-ligne avec le framework Vision d'Apple, puis estime les calories à partir d'une base locale. Aucune donnée n'est envoyée sur Internet, aucune clé API n'est requise.")
-                }
-
-                Section {
-                    Text("Pour une meilleure précision, ajoutez un modèle Core ML dédié aux aliments (ex. Food-101) nommé « FoodClassifier.mlmodel » au projet Xcode : il sera détecté et utilisé automatiquement.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("Modèle avancé (optionnel)")
                 }
             }
             .navigationTitle("Réglages")
