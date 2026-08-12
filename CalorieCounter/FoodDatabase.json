@@ -1,0 +1,1486 @@
+[
+ {
+  "key": "banana",
+  "name": "Banane",
+  "aliases": [
+   "banane"
+  ],
+  "kcal": 89,
+  "protein": 1.1,
+  "carbs": 23,
+  "fat": 0.3,
+  "defaultGrams": 120
+ },
+ {
+  "key": "apple",
+  "name": "Pomme",
+  "aliases": [
+   "pomme",
+   "granny smith apple"
+  ],
+  "kcal": 52,
+  "protein": 0.3,
+  "carbs": 14,
+  "fat": 0.2,
+  "defaultGrams": 150
+ },
+ {
+  "key": "orange",
+  "name": "Orange",
+  "aliases": [
+   "clementine",
+   "mandarine"
+  ],
+  "kcal": 47,
+  "protein": 0.9,
+  "carbs": 12,
+  "fat": 0.1,
+  "defaultGrams": 130
+ },
+ {
+  "key": "strawberry",
+  "name": "Fraises",
+  "aliases": [
+   "fraise",
+   "strawberries",
+   "berries"
+  ],
+  "kcal": 32,
+  "protein": 0.7,
+  "carbs": 8,
+  "fat": 0.3,
+  "defaultGrams": 100
+ },
+ {
+  "key": "grape",
+  "name": "Raisin",
+  "aliases": [
+   "grapes",
+   "raisins"
+  ],
+  "kcal": 69,
+  "protein": 0.7,
+  "carbs": 18,
+  "fat": 0.2,
+  "defaultGrams": 100
+ },
+ {
+  "key": "rice",
+  "name": "Riz",
+  "aliases": [
+   "riz",
+   "white rice",
+   "steamed rice"
+  ],
+  "kcal": 130,
+  "protein": 2.7,
+  "carbs": 28,
+  "fat": 0.3,
+  "defaultGrams": 200
+ },
+ {
+  "key": "soup",
+  "name": "Soupe",
+  "aliases": [
+   "soupe",
+   "potage",
+   "broth"
+  ],
+  "kcal": 50,
+  "protein": 2,
+  "carbs": 6,
+  "fat": 2,
+  "defaultGrams": 300
+ },
+ {
+  "key": "bread",
+  "name": "Pain",
+  "aliases": [
+   "pain",
+   "baguette",
+   "toast",
+   "loaf"
+  ],
+  "kcal": 265,
+  "protein": 9,
+  "carbs": 49,
+  "fat": 3.2,
+  "defaultGrams": 60
+ },
+ {
+  "key": "croissant",
+  "name": "Croissant",
+  "aliases": [
+   "viennoiserie"
+  ],
+  "kcal": 406,
+  "protein": 8,
+  "carbs": 45,
+  "fat": 21,
+  "defaultGrams": 60
+ },
+ {
+  "key": "cheese",
+  "name": "Fromage",
+  "aliases": [
+   "fromage",
+   "cheddar",
+   "brie",
+   "camembert"
+  ],
+  "kcal": 402,
+  "protein": 25,
+  "carbs": 1.3,
+  "fat": 33,
+  "defaultGrams": 40
+ },
+ {
+  "key": "chicken",
+  "name": "Poulet",
+  "aliases": [
+   "poulet",
+   "chicken breast",
+   "roast chicken",
+   "grilled chicken"
+  ],
+  "kcal": 165,
+  "protein": 31,
+  "carbs": 0,
+  "fat": 3.6,
+  "defaultGrams": 150
+ },
+ {
+  "key": "fish",
+  "name": "Poisson",
+  "aliases": [
+   "poisson",
+   "salmon",
+   "saumon",
+   "cod",
+   "tuna",
+   "thon"
+  ],
+  "kcal": 206,
+  "protein": 22,
+  "carbs": 0,
+  "fat": 12,
+  "defaultGrams": 150
+ },
+ {
+  "key": "shrimp",
+  "name": "Crevettes",
+  "aliases": [
+   "crevette",
+   "prawn",
+   "gambas"
+  ],
+  "kcal": 99,
+  "protein": 24,
+  "carbs": 0.2,
+  "fat": 0.3,
+  "defaultGrams": 100
+ },
+ {
+  "key": "broccoli",
+  "name": "Brocoli",
+  "aliases": [
+   "brocoli"
+  ],
+  "kcal": 34,
+  "protein": 2.8,
+  "carbs": 7,
+  "fat": 0.4,
+  "defaultGrams": 150
+ },
+ {
+  "key": "carrot",
+  "name": "Carotte",
+  "aliases": [
+   "carotte",
+   "carrots"
+  ],
+  "kcal": 41,
+  "protein": 0.9,
+  "carbs": 10,
+  "fat": 0.2,
+  "defaultGrams": 100
+ },
+ {
+  "key": "potato",
+  "name": "Pomme de terre",
+  "aliases": [
+   "potato",
+   "mashed potato",
+   "puree",
+   "pommes de terre"
+  ],
+  "kcal": 77,
+  "protein": 2,
+  "carbs": 17,
+  "fat": 0.1,
+  "defaultGrams": 200
+ },
+ {
+  "key": "tomato",
+  "name": "Tomate",
+  "aliases": [
+   "tomate",
+   "tomatoes"
+  ],
+  "kcal": 18,
+  "protein": 0.9,
+  "carbs": 3.9,
+  "fat": 0.2,
+  "defaultGrams": 100
+ },
+ {
+  "key": "avocado",
+  "name": "Avocat",
+  "aliases": [
+   "avocado"
+  ],
+  "kcal": 160,
+  "protein": 2,
+  "carbs": 9,
+  "fat": 15,
+  "defaultGrams": 100
+ },
+ {
+  "key": "egg",
+  "name": "Œuf",
+  "aliases": [
+   "boiled egg",
+   "oeuf",
+   "egg"
+  ],
+  "kcal": 155,
+  "protein": 13,
+  "carbs": 1.1,
+  "fat": 11,
+  "defaultGrams": 50
+ },
+ {
+  "key": "fried_egg",
+  "name": "Œufs au plat",
+  "aliases": [
+   "fried egg",
+   "sunny side up"
+  ],
+  "kcal": 196,
+  "protein": 14,
+  "carbs": 1,
+  "fat": 15,
+  "defaultGrams": 100
+ },
+ {
+  "key": "yogurt",
+  "name": "Yaourt",
+  "aliases": [
+   "yaourt",
+   "yoghurt",
+   "greek yogurt"
+  ],
+  "kcal": 59,
+  "protein": 10,
+  "carbs": 3.6,
+  "fat": 0.4,
+  "defaultGrams": 125
+ },
+ {
+  "key": "cookie",
+  "name": "Biscuit",
+  "aliases": [
+   "cookie",
+   "biscuits",
+   "sable"
+  ],
+  "kcal": 502,
+  "protein": 6,
+  "carbs": 64,
+  "fat": 24,
+  "defaultGrams": 30
+ },
+ {
+  "key": "chocolate",
+  "name": "Chocolat",
+  "aliases": [
+   "chocolat",
+   "chocolate bar"
+  ],
+  "kcal": 546,
+  "protein": 4.9,
+  "carbs": 61,
+  "fat": 31,
+  "defaultGrams": 30
+ },
+ {
+  "key": "coffee",
+  "name": "Café",
+  "aliases": [
+   "cafe",
+   "espresso",
+   "cappuccino"
+  ],
+  "kcal": 2,
+  "protein": 0.1,
+  "carbs": 0,
+  "fat": 0,
+  "defaultGrams": 100
+ },
+ {
+  "key": "wine",
+  "name": "Vin",
+  "aliases": [
+   "vin",
+   "red wine",
+   "white wine"
+  ],
+  "kcal": 83,
+  "protein": 0.1,
+  "carbs": 2.6,
+  "fat": 0,
+  "defaultGrams": 150
+ },
+ {
+  "key": "beer",
+  "name": "Bière",
+  "aliases": [
+   "biere",
+   "beer"
+  ],
+  "kcal": 43,
+  "protein": 0.5,
+  "carbs": 3.6,
+  "fat": 0,
+  "defaultGrams": 330
+ },
+ {
+  "key": "pretzel",
+  "name": "Bretzel",
+  "aliases": [
+   "pretzel"
+  ],
+  "kcal": 380,
+  "protein": 10,
+  "carbs": 80,
+  "fat": 3,
+  "defaultGrams": 80
+ },
+ {
+  "key": "popcorn",
+  "name": "Popcorn",
+  "aliases": [
+   "popcorn"
+  ],
+  "kcal": 387,
+  "protein": 12,
+  "carbs": 78,
+  "fat": 4,
+  "defaultGrams": 30
+ },
+ {
+  "key": "bagel",
+  "name": "Bagel",
+  "aliases": [
+   "bagel"
+  ],
+  "kcal": 250,
+  "protein": 10,
+  "carbs": 49,
+  "fat": 1.5,
+  "defaultGrams": 100
+ },
+ {
+  "key": "sandwich",
+  "name": "Sandwich",
+  "aliases": [
+   "sub",
+   "panini",
+   "baguette sandwich"
+  ],
+  "kcal": 250,
+  "protein": 12,
+  "carbs": 30,
+  "fat": 9,
+  "defaultGrams": 200
+ },
+ {
+  "key": "salad",
+  "name": "Salade",
+  "aliases": [
+   "salade verte",
+   "green salad"
+  ],
+  "kcal": 150,
+  "protein": 3,
+  "carbs": 10,
+  "fat": 10,
+  "defaultGrams": 200
+ },
+ {
+  "key": "pasta",
+  "name": "Pâtes",
+  "aliases": [
+   "pasta",
+   "noodles",
+   "penne",
+   "tagliatelle",
+   "spaghetti"
+  ],
+  "kcal": 158,
+  "protein": 6,
+  "carbs": 31,
+  "fat": 1,
+  "defaultGrams": 250
+ },
+ {
+  "key": "cake",
+  "name": "Gâteau",
+  "aliases": [
+   "gateau",
+   "tart",
+   "tarte"
+  ],
+  "kcal": 350,
+  "protein": 5,
+  "carbs": 50,
+  "fat": 15,
+  "defaultGrams": 100
+ },
+ {
+  "key": "burrito",
+  "name": "Burrito",
+  "aliases": [
+   "wrap",
+   "fajita"
+  ],
+  "kcal": 206,
+  "protein": 8,
+  "carbs": 25,
+  "fat": 8,
+  "defaultGrams": 250
+ },
+ {
+  "key": "curry",
+  "name": "Curry",
+  "aliases": [
+   "curry",
+   "butter chicken"
+  ],
+  "kcal": 150,
+  "protein": 6,
+  "carbs": 12,
+  "fat": 8,
+  "defaultGrams": 300
+ },
+ {
+  "key": "apple_pie",
+  "name": "Tarte aux pommes",
+  "aliases": null,
+  "kcal": 265,
+  "protein": 2.4,
+  "carbs": 37,
+  "fat": 12,
+  "defaultGrams": 125
+ },
+ {
+  "key": "baby_back_ribs",
+  "name": "Travers de porc",
+  "aliases": null,
+  "kcal": 290,
+  "protein": 25,
+  "carbs": 0,
+  "fat": 21,
+  "defaultGrams": 250
+ },
+ {
+  "key": "baklava",
+  "name": "Baklava",
+  "aliases": null,
+  "kcal": 430,
+  "protein": 6,
+  "carbs": 45,
+  "fat": 26,
+  "defaultGrams": 80
+ },
+ {
+  "key": "beef_carpaccio",
+  "name": "Carpaccio de bœuf",
+  "aliases": null,
+  "kcal": 190,
+  "protein": 20,
+  "carbs": 1,
+  "fat": 12,
+  "defaultGrams": 120
+ },
+ {
+  "key": "beef_tartare",
+  "name": "Tartare de bœuf",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 19,
+  "carbs": 1,
+  "fat": 11,
+  "defaultGrams": 180
+ },
+ {
+  "key": "beet_salad",
+  "name": "Salade de betteraves",
+  "aliases": null,
+  "kcal": 90,
+  "protein": 2,
+  "carbs": 12,
+  "fat": 4,
+  "defaultGrams": 150
+ },
+ {
+  "key": "beignets",
+  "name": "Beignets",
+  "aliases": null,
+  "kcal": 340,
+  "protein": 5,
+  "carbs": 42,
+  "fat": 17,
+  "defaultGrams": 90
+ },
+ {
+  "key": "bibimbap",
+  "name": "Bibimbap",
+  "aliases": null,
+  "kcal": 130,
+  "protein": 6,
+  "carbs": 18,
+  "fat": 4,
+  "defaultGrams": 400
+ },
+ {
+  "key": "bread_pudding",
+  "name": "Pudding au pain",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 4,
+  "carbs": 28,
+  "fat": 6,
+  "defaultGrams": 150
+ },
+ {
+  "key": "breakfast_burrito",
+  "name": "Burrito du matin",
+  "aliases": null,
+  "kcal": 210,
+  "protein": 9,
+  "carbs": 20,
+  "fat": 10,
+  "defaultGrams": 250
+ },
+ {
+  "key": "bruschetta",
+  "name": "Bruschetta",
+  "aliases": null,
+  "kcal": 200,
+  "protein": 6,
+  "carbs": 28,
+  "fat": 7,
+  "defaultGrams": 120
+ },
+ {
+  "key": "caesar_salad",
+  "name": "Salade César",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 7,
+  "carbs": 7,
+  "fat": 14,
+  "defaultGrams": 200
+ },
+ {
+  "key": "cannoli",
+  "name": "Cannoli",
+  "aliases": null,
+  "kcal": 350,
+  "protein": 7,
+  "carbs": 35,
+  "fat": 20,
+  "defaultGrams": 90
+ },
+ {
+  "key": "caprese_salad",
+  "name": "Salade caprese",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 8,
+  "carbs": 4,
+  "fat": 11,
+  "defaultGrams": 180
+ },
+ {
+  "key": "carrot_cake",
+  "name": "Carrot cake",
+  "aliases": null,
+  "kcal": 340,
+  "protein": 4,
+  "carbs": 48,
+  "fat": 15,
+  "defaultGrams": 110
+ },
+ {
+  "key": "ceviche",
+  "name": "Ceviche",
+  "aliases": null,
+  "kcal": 90,
+  "protein": 15,
+  "carbs": 4,
+  "fat": 1,
+  "defaultGrams": 150
+ },
+ {
+  "key": "cheese_plate",
+  "name": "Plateau de fromages",
+  "aliases": null,
+  "kcal": 380,
+  "protein": 23,
+  "carbs": 2,
+  "fat": 31,
+  "defaultGrams": 100
+ },
+ {
+  "key": "cheesecake",
+  "name": "Cheesecake",
+  "aliases": null,
+  "kcal": 320,
+  "protein": 6,
+  "carbs": 26,
+  "fat": 22,
+  "defaultGrams": 120
+ },
+ {
+  "key": "chicken_curry",
+  "name": "Poulet au curry",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 12,
+  "carbs": 8,
+  "fat": 8,
+  "defaultGrams": 350
+ },
+ {
+  "key": "chicken_quesadilla",
+  "name": "Quesadilla au poulet",
+  "aliases": null,
+  "kcal": 250,
+  "protein": 14,
+  "carbs": 22,
+  "fat": 12,
+  "defaultGrams": 200
+ },
+ {
+  "key": "chicken_wings",
+  "name": "Ailes de poulet",
+  "aliases": null,
+  "kcal": 250,
+  "protein": 22,
+  "carbs": 3,
+  "fat": 16,
+  "defaultGrams": 150
+ },
+ {
+  "key": "chocolate_cake",
+  "name": "Gâteau au chocolat",
+  "aliases": null,
+  "kcal": 370,
+  "protein": 5,
+  "carbs": 50,
+  "fat": 17,
+  "defaultGrams": 110
+ },
+ {
+  "key": "chocolate_mousse",
+  "name": "Mousse au chocolat",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 4,
+  "carbs": 25,
+  "fat": 13,
+  "defaultGrams": 100
+ },
+ {
+  "key": "churros",
+  "name": "Churros",
+  "aliases": null,
+  "kcal": 360,
+  "protein": 4,
+  "carbs": 44,
+  "fat": 19,
+  "defaultGrams": 80
+ },
+ {
+  "key": "clam_chowder",
+  "name": "Chaudrée de palourdes",
+  "aliases": null,
+  "kcal": 90,
+  "protein": 5,
+  "carbs": 9,
+  "fat": 4,
+  "defaultGrams": 300
+ },
+ {
+  "key": "club_sandwich",
+  "name": "Club sandwich",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 13,
+  "carbs": 20,
+  "fat": 11,
+  "defaultGrams": 250
+ },
+ {
+  "key": "crab_cakes",
+  "name": "Croquettes de crabe",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 12,
+  "carbs": 10,
+  "fat": 10,
+  "defaultGrams": 120
+ },
+ {
+  "key": "creme_brulee",
+  "name": "Crème brûlée",
+  "aliases": null,
+  "kcal": 320,
+  "protein": 4,
+  "carbs": 28,
+  "fat": 21,
+  "defaultGrams": 120
+ },
+ {
+  "key": "croque_madame",
+  "name": "Croque-madame",
+  "aliases": null,
+  "kcal": 260,
+  "protein": 14,
+  "carbs": 20,
+  "fat": 14,
+  "defaultGrams": 200
+ },
+ {
+  "key": "cup_cakes",
+  "name": "Cupcakes",
+  "aliases": null,
+  "kcal": 340,
+  "protein": 4,
+  "carbs": 52,
+  "fat": 14,
+  "defaultGrams": 80
+ },
+ {
+  "key": "deviled_eggs",
+  "name": "Œufs mimosa",
+  "aliases": null,
+  "kcal": 210,
+  "protein": 10,
+  "carbs": 1,
+  "fat": 18,
+  "defaultGrams": 80
+ },
+ {
+  "key": "donuts",
+  "name": "Donuts",
+  "aliases": null,
+  "kcal": 452,
+  "protein": 5,
+  "carbs": 51,
+  "fat": 25,
+  "defaultGrams": 70
+ },
+ {
+  "key": "dumplings",
+  "name": "Raviolis vapeur",
+  "aliases": null,
+  "kcal": 220,
+  "protein": 8,
+  "carbs": 27,
+  "fat": 8,
+  "defaultGrams": 150
+ },
+ {
+  "key": "edamame",
+  "name": "Édamame",
+  "aliases": null,
+  "kcal": 120,
+  "protein": 11,
+  "carbs": 10,
+  "fat": 5,
+  "defaultGrams": 100
+ },
+ {
+  "key": "eggs_benedict",
+  "name": "Œufs bénédicte",
+  "aliases": null,
+  "kcal": 220,
+  "protein": 11,
+  "carbs": 12,
+  "fat": 15,
+  "defaultGrams": 180
+ },
+ {
+  "key": "escargots",
+  "name": "Escargots",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 10,
+  "carbs": 3,
+  "fat": 10,
+  "defaultGrams": 100
+ },
+ {
+  "key": "falafel",
+  "name": "Falafel",
+  "aliases": null,
+  "kcal": 330,
+  "protein": 13,
+  "carbs": 32,
+  "fat": 18,
+  "defaultGrams": 120
+ },
+ {
+  "key": "filet_mignon",
+  "name": "Filet mignon",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 27,
+  "carbs": 0,
+  "fat": 14,
+  "defaultGrams": 180
+ },
+ {
+  "key": "fish_and_chips",
+  "name": "Fish and chips",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 12,
+  "carbs": 22,
+  "fat": 11,
+  "defaultGrams": 300
+ },
+ {
+  "key": "foie_gras",
+  "name": "Foie gras",
+  "aliases": null,
+  "kcal": 460,
+  "protein": 11,
+  "carbs": 5,
+  "fat": 44,
+  "defaultGrams": 50
+ },
+ {
+  "key": "french_fries",
+  "name": "Frites",
+  "aliases": null,
+  "kcal": 312,
+  "protein": 3.4,
+  "carbs": 41,
+  "fat": 15,
+  "defaultGrams": 150
+ },
+ {
+  "key": "french_onion_soup",
+  "name": "Soupe à l'oignon",
+  "aliases": null,
+  "kcal": 80,
+  "protein": 3,
+  "carbs": 8,
+  "fat": 4,
+  "defaultGrams": 300
+ },
+ {
+  "key": "french_toast",
+  "name": "Pain perdu",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 7,
+  "carbs": 25,
+  "fat": 11,
+  "defaultGrams": 150
+ },
+ {
+  "key": "fried_calamari",
+  "name": "Calamars frits",
+  "aliases": null,
+  "kcal": 175,
+  "protein": 15,
+  "carbs": 8,
+  "fat": 9,
+  "defaultGrams": 120
+ },
+ {
+  "key": "fried_rice",
+  "name": "Riz frit",
+  "aliases": null,
+  "kcal": 165,
+  "protein": 5,
+  "carbs": 25,
+  "fat": 5,
+  "defaultGrams": 250
+ },
+ {
+  "key": "frozen_yogurt",
+  "name": "Yaourt glacé",
+  "aliases": null,
+  "kcal": 130,
+  "protein": 4,
+  "carbs": 22,
+  "fat": 4,
+  "defaultGrams": 100
+ },
+ {
+  "key": "garlic_bread",
+  "name": "Pain à l'ail",
+  "aliases": null,
+  "kcal": 350,
+  "protein": 8,
+  "carbs": 42,
+  "fat": 16,
+  "defaultGrams": 80
+ },
+ {
+  "key": "gnocchi",
+  "name": "Gnocchis",
+  "aliases": null,
+  "kcal": 130,
+  "protein": 3,
+  "carbs": 25,
+  "fat": 2,
+  "defaultGrams": 250
+ },
+ {
+  "key": "greek_salad",
+  "name": "Salade grecque",
+  "aliases": null,
+  "kcal": 120,
+  "protein": 3,
+  "carbs": 6,
+  "fat": 9,
+  "defaultGrams": 200
+ },
+ {
+  "key": "grilled_cheese_sandwich",
+  "name": "Croque au fromage",
+  "aliases": null,
+  "kcal": 350,
+  "protein": 14,
+  "carbs": 28,
+  "fat": 20,
+  "defaultGrams": 150
+ },
+ {
+  "key": "grilled_salmon",
+  "name": "Saumon grillé",
+  "aliases": null,
+  "kcal": 210,
+  "protein": 23,
+  "carbs": 0,
+  "fat": 13,
+  "defaultGrams": 180
+ },
+ {
+  "key": "guacamole",
+  "name": "Guacamole",
+  "aliases": null,
+  "kcal": 155,
+  "protein": 2,
+  "carbs": 9,
+  "fat": 13,
+  "defaultGrams": 100
+ },
+ {
+  "key": "gyoza",
+  "name": "Gyoza",
+  "aliases": null,
+  "kcal": 210,
+  "protein": 8,
+  "carbs": 24,
+  "fat": 9,
+  "defaultGrams": 150
+ },
+ {
+  "key": "hamburger",
+  "name": "Hamburger",
+  "aliases": null,
+  "kcal": 254,
+  "protein": 17,
+  "carbs": 30,
+  "fat": 12,
+  "defaultGrams": 200
+ },
+ {
+  "key": "hot_and_sour_soup",
+  "name": "Soupe aigre-piquante",
+  "aliases": null,
+  "kcal": 60,
+  "protein": 3,
+  "carbs": 6,
+  "fat": 2,
+  "defaultGrams": 300
+ },
+ {
+  "key": "hot_dog",
+  "name": "Hot-dog",
+  "aliases": null,
+  "kcal": 290,
+  "protein": 10,
+  "carbs": 25,
+  "fat": 17,
+  "defaultGrams": 150
+ },
+ {
+  "key": "huevos_rancheros",
+  "name": "Huevos rancheros",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 8,
+  "carbs": 12,
+  "fat": 8,
+  "defaultGrams": 250
+ },
+ {
+  "key": "hummus",
+  "name": "Houmous",
+  "aliases": null,
+  "kcal": 170,
+  "protein": 5,
+  "carbs": 14,
+  "fat": 10,
+  "defaultGrams": 100
+ },
+ {
+  "key": "ice_cream",
+  "name": "Glace",
+  "aliases": null,
+  "kcal": 207,
+  "protein": 3.5,
+  "carbs": 24,
+  "fat": 11,
+  "defaultGrams": 100
+ },
+ {
+  "key": "lasagna",
+  "name": "Lasagnes",
+  "aliases": null,
+  "kcal": 170,
+  "protein": 9,
+  "carbs": 15,
+  "fat": 8,
+  "defaultGrams": 300
+ },
+ {
+  "key": "lobster_bisque",
+  "name": "Bisque de homard",
+  "aliases": null,
+  "kcal": 100,
+  "protein": 5,
+  "carbs": 7,
+  "fat": 6,
+  "defaultGrams": 300
+ },
+ {
+  "key": "lobster_roll_sandwich",
+  "name": "Lobster roll",
+  "aliases": null,
+  "kcal": 200,
+  "protein": 12,
+  "carbs": 18,
+  "fat": 9,
+  "defaultGrams": 200
+ },
+ {
+  "key": "macaroni_and_cheese",
+  "name": "Macaroni au fromage",
+  "aliases": null,
+  "kcal": 190,
+  "protein": 8,
+  "carbs": 20,
+  "fat": 9,
+  "defaultGrams": 250
+ },
+ {
+  "key": "macarons",
+  "name": "Macarons",
+  "aliases": null,
+  "kcal": 400,
+  "protein": 7,
+  "carbs": 60,
+  "fat": 15,
+  "defaultGrams": 60
+ },
+ {
+  "key": "miso_soup",
+  "name": "Soupe miso",
+  "aliases": null,
+  "kcal": 40,
+  "protein": 3,
+  "carbs": 4,
+  "fat": 1,
+  "defaultGrams": 250
+ },
+ {
+  "key": "mussels",
+  "name": "Moules",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 18,
+  "carbs": 7,
+  "fat": 4,
+  "defaultGrams": 250
+ },
+ {
+  "key": "nachos",
+  "name": "Nachos",
+  "aliases": null,
+  "kcal": 306,
+  "protein": 6,
+  "carbs": 37,
+  "fat": 15,
+  "defaultGrams": 150
+ },
+ {
+  "key": "omelette",
+  "name": "Omelette",
+  "aliases": null,
+  "kcal": 154,
+  "protein": 11,
+  "carbs": 1,
+  "fat": 12,
+  "defaultGrams": 150
+ },
+ {
+  "key": "onion_rings",
+  "name": "Rondelles d'oignon",
+  "aliases": null,
+  "kcal": 280,
+  "protein": 4,
+  "carbs": 35,
+  "fat": 14,
+  "defaultGrams": 120
+ },
+ {
+  "key": "oysters",
+  "name": "Huîtres",
+  "aliases": null,
+  "kcal": 80,
+  "protein": 9,
+  "carbs": 4,
+  "fat": 2,
+  "defaultGrams": 150
+ },
+ {
+  "key": "pad_thai",
+  "name": "Pad thaï",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 7,
+  "carbs": 20,
+  "fat": 5,
+  "defaultGrams": 300
+ },
+ {
+  "key": "paella",
+  "name": "Paella",
+  "aliases": null,
+  "kcal": 160,
+  "protein": 9,
+  "carbs": 20,
+  "fat": 5,
+  "defaultGrams": 350
+ },
+ {
+  "key": "pancakes",
+  "name": "Pancakes",
+  "aliases": null,
+  "kcal": 227,
+  "protein": 6,
+  "carbs": 28,
+  "fat": 9,
+  "defaultGrams": 150
+ },
+ {
+  "key": "panna_cotta",
+  "name": "Panna cotta",
+  "aliases": null,
+  "kcal": 250,
+  "protein": 3,
+  "carbs": 22,
+  "fat": 17,
+  "defaultGrams": 110
+ },
+ {
+  "key": "peking_duck",
+  "name": "Canard laqué",
+  "aliases": null,
+  "kcal": 240,
+  "protein": 19,
+  "carbs": 3,
+  "fat": 17,
+  "defaultGrams": 150
+ },
+ {
+  "key": "pho",
+  "name": "Pho",
+  "aliases": null,
+  "kcal": 90,
+  "protein": 7,
+  "carbs": 10,
+  "fat": 2,
+  "defaultGrams": 400
+ },
+ {
+  "key": "pizza",
+  "name": "Pizza",
+  "aliases": null,
+  "kcal": 266,
+  "protein": 11,
+  "carbs": 33,
+  "fat": 10,
+  "defaultGrams": 200
+ },
+ {
+  "key": "pork_chop",
+  "name": "Côte de porc",
+  "aliases": null,
+  "kcal": 230,
+  "protein": 25,
+  "carbs": 0,
+  "fat": 14,
+  "defaultGrams": 200
+ },
+ {
+  "key": "poutine",
+  "name": "Poutine",
+  "aliases": null,
+  "kcal": 250,
+  "protein": 7,
+  "carbs": 25,
+  "fat": 14,
+  "defaultGrams": 300
+ },
+ {
+  "key": "prime_rib",
+  "name": "Côte de bœuf",
+  "aliases": null,
+  "kcal": 290,
+  "protein": 24,
+  "carbs": 0,
+  "fat": 21,
+  "defaultGrams": 220
+ },
+ {
+  "key": "pulled_pork_sandwich",
+  "name": "Sandwich au porc effiloché",
+  "aliases": null,
+  "kcal": 250,
+  "protein": 15,
+  "carbs": 25,
+  "fat": 10,
+  "defaultGrams": 220
+ },
+ {
+  "key": "ramen",
+  "name": "Ramen",
+  "aliases": null,
+  "kcal": 110,
+  "protein": 5,
+  "carbs": 15,
+  "fat": 4,
+  "defaultGrams": 400
+ },
+ {
+  "key": "ravioli",
+  "name": "Raviolis",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 7,
+  "carbs": 25,
+  "fat": 6,
+  "defaultGrams": 250
+ },
+ {
+  "key": "red_velvet_cake",
+  "name": "Red velvet cake",
+  "aliases": null,
+  "kcal": 370,
+  "protein": 4,
+  "carbs": 50,
+  "fat": 18,
+  "defaultGrams": 110
+ },
+ {
+  "key": "risotto",
+  "name": "Risotto",
+  "aliases": null,
+  "kcal": 165,
+  "protein": 4,
+  "carbs": 22,
+  "fat": 6,
+  "defaultGrams": 300
+ },
+ {
+  "key": "samosa",
+  "name": "Samoussa",
+  "aliases": null,
+  "kcal": 260,
+  "protein": 5,
+  "carbs": 30,
+  "fat": 13,
+  "defaultGrams": 80
+ },
+ {
+  "key": "sashimi",
+  "name": "Sashimi",
+  "aliases": null,
+  "kcal": 130,
+  "protein": 22,
+  "carbs": 0,
+  "fat": 4,
+  "defaultGrams": 120
+ },
+ {
+  "key": "scallops",
+  "name": "Saint-Jacques",
+  "aliases": null,
+  "kcal": 110,
+  "protein": 20,
+  "carbs": 3,
+  "fat": 1,
+  "defaultGrams": 120
+ },
+ {
+  "key": "seaweed_salad",
+  "name": "Salade d'algues",
+  "aliases": null,
+  "kcal": 70,
+  "protein": 1,
+  "carbs": 8,
+  "fat": 4,
+  "defaultGrams": 100
+ },
+ {
+  "key": "shrimp_and_grits",
+  "name": "Crevettes et gruau",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 10,
+  "carbs": 14,
+  "fat": 6,
+  "defaultGrams": 300
+ },
+ {
+  "key": "spaghetti_bolognese",
+  "name": "Spaghettis bolognaise",
+  "aliases": null,
+  "kcal": 160,
+  "protein": 8,
+  "carbs": 20,
+  "fat": 5,
+  "defaultGrams": 350
+ },
+ {
+  "key": "spaghetti_carbonara",
+  "name": "Spaghettis carbonara",
+  "aliases": null,
+  "kcal": 200,
+  "protein": 8,
+  "carbs": 22,
+  "fat": 9,
+  "defaultGrams": 300
+ },
+ {
+  "key": "spring_rolls",
+  "name": "Rouleaux de printemps",
+  "aliases": null,
+  "kcal": 140,
+  "protein": 4,
+  "carbs": 20,
+  "fat": 5,
+  "defaultGrams": 120
+ },
+ {
+  "key": "steak",
+  "name": "Steak",
+  "aliases": null,
+  "kcal": 271,
+  "protein": 25,
+  "carbs": 0,
+  "fat": 19,
+  "defaultGrams": 200
+ },
+ {
+  "key": "strawberry_shortcake",
+  "name": "Shortcake aux fraises",
+  "aliases": null,
+  "kcal": 300,
+  "protein": 4,
+  "carbs": 42,
+  "fat": 13,
+  "defaultGrams": 120
+ },
+ {
+  "key": "sushi",
+  "name": "Sushi",
+  "aliases": null,
+  "kcal": 150,
+  "protein": 5.8,
+  "carbs": 30,
+  "fat": 1,
+  "defaultGrams": 200
+ },
+ {
+  "key": "tacos",
+  "name": "Tacos",
+  "aliases": null,
+  "kcal": 226,
+  "protein": 9,
+  "carbs": 20,
+  "fat": 12,
+  "defaultGrams": 150
+ },
+ {
+  "key": "takoyaki",
+  "name": "Takoyaki",
+  "aliases": null,
+  "kcal": 180,
+  "protein": 7,
+  "carbs": 20,
+  "fat": 8,
+  "defaultGrams": 150
+ },
+ {
+  "key": "tiramisu",
+  "name": "Tiramisu",
+  "aliases": null,
+  "kcal": 280,
+  "protein": 5,
+  "carbs": 30,
+  "fat": 16,
+  "defaultGrams": 120
+ },
+ {
+  "key": "tuna_tartare",
+  "name": "Tartare de thon",
+  "aliases": null,
+  "kcal": 160,
+  "protein": 20,
+  "carbs": 2,
+  "fat": 8,
+  "defaultGrams": 150
+ },
+ {
+  "key": "waffles",
+  "name": "Gaufres",
+  "aliases": null,
+  "kcal": 291,
+  "protein": 8,
+  "carbs": 33,
+  "fat": 14,
+  "defaultGrams": 100
+ }
+]
