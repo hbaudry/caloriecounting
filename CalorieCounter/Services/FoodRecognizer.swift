@@ -23,6 +23,9 @@ enum FoodRecognizer {
         return vnModel
     }()
 
+    /// Indique si le modèle Food-101 dédié est présent et actif.
+    static var hasDedicatedModel: Bool { customModel != nil }
+
     /// Reconnaît les aliments présents sur la photo et renvoie des candidats
     /// associés à la base locale, triés par confiance décroissante.
     static func recognize(_ image: UIImage) async -> [RecognitionCandidate] {

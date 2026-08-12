@@ -45,33 +45,41 @@ CalorieCounter/
 ## Comment ça marche
 
 1. La photo est passée au framework **Vision** d'Apple.
-   - Par défaut : `VNClassifyImageRequest`, le classifieur d'images intégré à iOS
-     (un modèle Core ML fourni par le système — rien à installer).
-   - Si vous ajoutez un modèle Core ML dédié aux aliments, il est utilisé à la place.
+   - Par défaut : le **modèle Food-101 dédié** inclus (`FoodClassifier.mlpackage`).
+   - Repli automatique sur `VNClassifyImageRequest` (classifieur intégré à iOS)
+     si le modèle dédié est absent.
 2. Les libellés reconnus sont associés à la **base locale** (`FoodDatabase.json`).
 3. Vous confirmez les aliments et réglez les portions ; les calories sont
    calculées localement (valeurs pour 100 g × grammes).
 
 Aucune donnée ne quitte l'appareil.
 
-## Améliorer la précision : créer le modèle de reconnaissance
+## Modèle de reconnaissance dédié (inclus)
 
-Le classifieur intégré d'iOS est généraliste. Pour une reconnaissance
-spécifiquement alimentaire, le dossier **`Tools/`** contient tout le nécessaire
-pour construire un modèle **Food-101** dédié :
+Le projet **inclut** un modèle Food-101 dédié :
+`CalorieCounter/FoodClassifier.mlpackage` (~83 Mo). `FoodRecognizer` le détecte
+et l'utilise automatiquement ; les 101 classes correspondent aux clés de
+`FoodDatabase.json`. Les Réglages indiquent « Modèle Food-101 dédié : Actif ».
 
-```bash
-bash Tools/download_food101.sh                                   # jeu de données
-swift Tools/TrainFoodClassifier.swift Tools/food-101/images FoodClassifier.mlmodel
-```
+- **Origine** : ViT (`nateraw/vit-base-food101` sur Hugging Face), converti en
+  Core ML et quantifié en 8 bits (script `Tools/convert_vit_to_coreml.py`).
+- **Repli** : si le modèle est retiré, l'app bascule sur le classifieur d'images
+  intégré à iOS (généraliste), donc elle fonctionne dans tous les cas.
 
-Glissez ensuite `FoodClassifier.mlmodel` dans le dossier `CalorieCounter` du
-projet : `FoodRecognizer` le détecte et l'utilise automatiquement. Les 101
-classes correspondent déjà aux clés de `FoodDatabase.json`. Détails complets
-dans [`Tools/README.md`](Tools/README.md).
+> ⚠️ Vérifiez les conditions de licence du modèle et du jeu de données Food-101
+> avant toute distribution commerciale.
 
-> Un modèle Core ML se construit sur un Mac (framework CreateML). L'app
-> fonctionne sans lui grâce au classifieur intégré d'iOS.
+### Reconstruire / remplacer le modèle
+
+- **Convertir un modèle Hugging Face** (comme fait ici) :
+  ```bash
+  python3 Tools/convert_vit_to_coreml.py
+  ```
+- **Entraîner le vôtre** (sur Mac, plus précis) : voir
+  [`Tools/README.md`](Tools/README.md) (téléchargement Food-101 + Create ML).
+
+Si vous entraînez un modèle avec d'autres classes, alignez leurs noms sur les
+clés `key` de `FoodDatabase.json`.
 
 ## Note importante
 
