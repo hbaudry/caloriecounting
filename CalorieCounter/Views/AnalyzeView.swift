@@ -75,12 +75,12 @@ struct AnalyzeView: View {
             }
             ProgressView(value: min(store.todaysTotalCalories, Double(store.dailyGoal)),
                          total: Double(max(store.dailyGoal, 1)))
-                .tint(store.todaysRemaining >= 0 ? .green : .red)
+                .tint(store.todaysRemaining >= 0 ? Color.green : Color.red)
             Text(store.todaysRemaining >= 0
                  ? "Il reste \(Int(store.todaysRemaining)) kcal"
                  : "Dépassement de \(Int(-store.todaysRemaining)) kcal")
                 .font(.caption)
-                .foregroundStyle(store.todaysRemaining >= 0 ? AnyShapeStyle(.secondary) : AnyShapeStyle(.red))
+                .foregroundStyle(store.todaysRemaining >= 0 ? Color.secondary : Color.red)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding()
@@ -259,7 +259,7 @@ struct AnalyzeView: View {
                 .frame(maxWidth: .infinity)
         }
         .buttonStyle(.borderedProminent)
-        .tint(savedConfirmation ? .green : .accentColor)
+        .tint(savedConfirmation ? Color.green : Color.accentColor)
         .disabled(savedConfirmation)
     }
 
