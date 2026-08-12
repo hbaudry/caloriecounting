@@ -8,7 +8,8 @@ Application iPhone (SwiftUI) qui **estime les calories d'un repas à partir d'un
 
 - 📸 Prise de photo (appareil) ou choix depuis la galerie
 - 🧠 Reconnaissance d'aliments **on-device** via le framework Vision d'Apple
-- 🍚 Base calorique locale (136 aliments : 101 plats Food-101 + génériques) — calories et macros par 100 g
+- 🍚 Base calorique locale riche : ~2 300 aliments (table **Ciqual 2020**, ANSES) pour la recherche, + un jeu de reconnaissance aligné sur le modèle
+- 🇫🇷 Interface et éléments système en français
 - ➕ Ajustement des portions (grammes) + ajout manuel par recherche
 - 📊 Suivi du total calorique du jour avec objectif personnalisable
 - 📖 Journal des repas regroupés par jour (persistance locale)
@@ -90,6 +91,29 @@ l'utilise automatiquement ; les 101 classes correspondent aux clés de
 
 Si vous entraînez un modèle avec d'autres classes, alignez leurs noms sur les
 clés `key` de `FoodDatabase.json`.
+
+## Base d'aliments
+
+Deux jeux de données locaux (`CalorieCounter/`) :
+
+- **`FoodDatabase.json`** — jeu de *reconnaissance* : clés alignées sur les
+  classes du modèle (portions par défaut soignées). Sert à convertir un résultat
+  de reconnaissance en calories.
+- **`FoodLibrary.json`** — grande *bibliothèque* de recherche : ~2 300 aliments
+  français issus de la **table Ciqual 2020** (ANSES), valeurs pour 100 g.
+
+La recherche manuelle couvre les deux ; la reconnaissance n'utilise que le jeu
+de reconnaissance (pour éviter les correspondances parasites).
+
+Pour régénérer la bibliothèque, voir `Tools/build_food_library.py`.
+
+## Sources & licences
+
+- **Ciqual 2020** — Table de composition nutritionnelle des aliments, ANSES,
+  sous **Licence Ouverte / Etalab 2.0**. Attribution affichée dans l'app
+  (Réglages → Sources).
+- **Modèle** — `nateraw/vit-base-food101` (Hugging Face). Vérifiez ses conditions
+  et celles du jeu Food-101 avant toute distribution commerciale.
 
 ## Note importante
 

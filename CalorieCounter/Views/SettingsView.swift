@@ -37,6 +37,14 @@ struct SettingsView: View {
                 } footer: {
                     Text("L'app reconnaît les aliments hors-ligne avec le framework Vision d'Apple, puis estime les calories à partir d'une base locale. Aucune donnée n'est envoyée sur Internet, aucune clé API n'est requise.")
                 }
+
+                Section {
+                    Text("Valeurs nutritionnelles : table Ciqual 2020 (ANSES), sous Licence Ouverte / Etalab.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                } header: {
+                    Text("Sources")
+                }
             }
             .navigationTitle("Réglages")
             .onAppear { goalText = String(store.dailyGoal) }

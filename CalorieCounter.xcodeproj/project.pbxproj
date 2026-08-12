@@ -85,7 +85,7 @@
 			};
 			buildConfigurationList = A10000000000000000000B /* Build configuration list for PBXProject "CalorieCounter" */;
 			compatibilityVersion = "Xcode 15.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -213,6 +213,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Calories";
+				INFOPLIST_KEY_CFBundleLocalizations = "fr en";
 				INFOPLIST_KEY_NSCameraUsageDescription = "L'application utilise l'appareil photo pour analyser les calories de votre assiette.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "L'application accède à vos photos pour analyser les calories d'un repas.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -245,6 +246,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Calories";
+				INFOPLIST_KEY_CFBundleLocalizations = "fr en";
 				INFOPLIST_KEY_NSCameraUsageDescription = "L'application utilise l'appareil photo pour analyser les calories de votre assiette.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "L'application accède à vos photos pour analyser les calories d'un repas.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
