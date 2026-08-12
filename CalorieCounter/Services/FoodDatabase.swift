@@ -48,10 +48,13 @@ final class FoodDatabase {
         }
     }
 
-    /// Normalise une chaîne : minuscules + suppression des accents.
+    /// Normalise une chaîne : minuscules, sans accents, underscores/tirets → espaces.
+    /// Ainsi la clé Food-101 « french_fries » correspond au libellé « french fries ».
     static func normalize(_ s: String) -> String {
         s.folding(options: .diacriticInsensitive, locale: .current)
             .lowercased()
+            .replacingOccurrences(of: "_", with: " ")
+            .replacingOccurrences(of: "-", with: " ")
             .trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

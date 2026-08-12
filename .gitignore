@@ -1,0 +1,10 @@
+# Dataset Food-101 (volumineux, à télécharger localement)
+Tools/food-101/
+*.tar.gz
+
+# Sorties de build / Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store

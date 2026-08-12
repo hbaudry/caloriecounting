@@ -8,7 +8,7 @@ Application iPhone (SwiftUI) qui **estime les calories d'un repas à partir d'un
 
 - 📸 Prise de photo (appareil) ou choix depuis la galerie
 - 🧠 Reconnaissance d'aliments **on-device** via le framework Vision d'Apple
-- 🍚 Base calorique locale (50 aliments courants) — calories et macros par 100 g
+- 🍚 Base calorique locale (136 aliments : 101 plats Food-101 + génériques) — calories et macros par 100 g
 - ➕ Ajustement des portions (grammes) + ajout manuel par recherche
 - 📊 Suivi du total calorique du jour avec objectif personnalisable
 - 📖 Journal des repas regroupés par jour (persistance locale)
@@ -54,13 +54,24 @@ CalorieCounter/
 
 Aucune donnée ne quitte l'appareil.
 
-## Améliorer la précision (optionnel)
+## Améliorer la précision : créer le modèle de reconnaissance
 
 Le classifieur intégré d'iOS est généraliste. Pour une reconnaissance
-spécifiquement alimentaire, ajoutez un modèle Core ML (ex. **Food-101**) au
-projet, nommé **`FoodClassifier.mlmodel`**. `FoodRecognizer` le détecte et
-l'utilise automatiquement. Pensez à enrichir `FoodDatabase.json` pour couvrir
-les catégories du modèle.
+spécifiquement alimentaire, le dossier **`Tools/`** contient tout le nécessaire
+pour construire un modèle **Food-101** dédié :
+
+```bash
+bash Tools/download_food101.sh                                   # jeu de données
+swift Tools/TrainFoodClassifier.swift Tools/food-101/images FoodClassifier.mlmodel
+```
+
+Glissez ensuite `FoodClassifier.mlmodel` dans le dossier `CalorieCounter` du
+projet : `FoodRecognizer` le détecte et l'utilise automatiquement. Les 101
+classes correspondent déjà aux clés de `FoodDatabase.json`. Détails complets
+dans [`Tools/README.md`](Tools/README.md).
+
+> Un modèle Core ML se construit sur un Mac (framework CreateML). L'app
+> fonctionne sans lui grâce au classifieur intégré d'iOS.
 
 ## Note importante
 
