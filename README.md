@@ -57,23 +57,33 @@ Aucune donnée ne quitte l'appareil.
 ## Modèle de reconnaissance dédié (inclus)
 
 Le projet **inclut** un modèle Food-101 dédié :
-`CalorieCounter/FoodClassifier.mlpackage` (~83 Mo). `FoodRecognizer` le détecte
-et l'utilise automatiquement ; les 101 classes correspondent aux clés de
+`CalorieCounter/FoodClassifier.mlpackage`. `FoodRecognizer` le détecte et
+l'utilise automatiquement ; les 101 classes correspondent aux clés de
 `FoodDatabase.json`. Les Réglages indiquent « Modèle Food-101 dédié : Actif ».
 
 - **Origine** : ViT (`nateraw/vit-base-food101` sur Hugging Face), converti en
-  Core ML et quantifié en 8 bits (script `Tools/convert_vit_to_coreml.py`).
+  Core ML (script `Tools/convert_vit_to_coreml.py`).
+- **Précision FP16 (~165 Mo)** — pour les appareils récents (ex. **iPhone 17
+  Pro Max**, puce A19 Pro) : meilleure exactitude, exécution sur le **Neural
+  Engine** (`computeUnits = .all`). Versionné via **Git LFS** (fichier > 100 Mo).
 - **Repli** : si le modèle est retiré, l'app bascule sur le classifieur d'images
   intégré à iOS (généraliste), donc elle fonctionne dans tous les cas.
+
+> **Git LFS** : ce dépôt stocke le poids du modèle via Git LFS. Installez-le
+> avant de cloner (`git lfs install`), sinon vous ne récupérerez qu'un pointeur.
 
 > ⚠️ Vérifiez les conditions de licence du modèle et du jeu de données Food-101
 > avant toute distribution commerciale.
 
 ### Reconstruire / remplacer le modèle
 
-- **Convertir un modèle Hugging Face** (comme fait ici) :
+- **FP16 (défaut, appareils récents)** :
   ```bash
   python3 Tools/convert_vit_to_coreml.py
+  ```
+- **Quantifié 8 bits (~83 Mo, sans Git LFS)** :
+  ```bash
+  python3 Tools/convert_vit_to_coreml.py --int8
   ```
 - **Entraîner le vôtre** (sur Mac, plus précis) : voir
   [`Tools/README.md`](Tools/README.md) (téléchargement Food-101 + Create ML).

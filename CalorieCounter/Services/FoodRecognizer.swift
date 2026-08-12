@@ -15,8 +15,14 @@ enum FoodRecognizer {
 
     /// Modèle Core ML personnalisé optionnel (chargé une seule fois si présent).
     private static let customModel: VNCoreMLModel? = {
-        guard let url = Bundle.main.url(forResource: "FoodClassifier", withExtension: "mlmodelc"),
-              let mlModel = try? MLModel(contentsOf: url),
+        guard let url = Bundle.main.url(forResource: "FoodClassifier", withExtension: "mlmodelc") else {
+            return nil
+        }
+        // On privilégie le Neural Engine (Apple Neural Engine) : idéal sur les
+        // appareils récents comme l'iPhone 17 Pro Max (puce A19 Pro).
+        let config = MLModelConfiguration()
+        config.computeUnits = .all
+        guard let mlModel = try? MLModel(contentsOf: url, configuration: config),
               let vnModel = try? VNCoreMLModel(for: mlModel) else {
             return nil
         }
