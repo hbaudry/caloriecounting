@@ -14,6 +14,7 @@ struct AnalyzeView: View {
     @State private var showLibrary = false
     @State private var searchQuery = ""
     @State private var savedConfirmation = false
+    @State private var errorMessage: String?
 
     private var totalCalories: Double { selected.reduce(0) { $0 + $1.calories } }
 
@@ -26,12 +27,23 @@ struct AnalyzeView: View {
                     captureButtons
 
                     if isAnalyzing {
-                        ProgressView("Analyse sur l'appareil…").padding()
+                        ProgressView(BackendConfig.isConfigured ? "Analyse en cours…" : "Analyse sur l'appareil…")
+                            .padding()
+                    }
+
+                    if let errorMessage {
+                        Text(errorMessage)
+                            .font(.callout)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding()
+                            .background(Color.red.opacity(0.85))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
 
                     if !candidates.isEmpty {
                         suggestionsSection
-                    } else if didRecognize && !isAnalyzing {
+                    } else if didRecognize && !isAnalyzing && selected.isEmpty {
                         Text("Aucun aliment reconnu automatiquement. Ajoutez-le à la main ci-dessous.")
                             .font(.callout)
                             .foregroundStyle(.secondary)
@@ -271,11 +283,24 @@ struct AnalyzeView: View {
         selected = []
         didRecognize = false
         savedConfirmation = false
+        errorMessage = nil
         Task {
             isAnalyzing = true
+            defer { isAnalyzing = false; didRecognize = true }
+
+            // Analyse distante (Claude vision) en priorité si le backend est configuré.
+            if BackendConfig.isConfigured {
+                do {
+                    let result = try await RemoteFoodAnalyzer.analyze(image: image)
+                    selected = result.items.map { SelectedEntry(food: $0.asFood(), grams: $0.grams) }
+                    return
+                } catch {
+                    errorMessage = (error as? LocalizedError)?.errorDescription ?? error.localizedDescription
+                    // repli sur la reconnaissance locale ci-dessous
+                }
+            }
+
             candidates = await FoodRecognizer.recognize(image)
-            isAnalyzing = false
-            didRecognize = true
         }
     }
 

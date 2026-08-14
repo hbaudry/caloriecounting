@@ -1,0 +1,32 @@
+services:
+  calorie-api:
+    build: .
+    ports:
+      # Derrière un reverse proxy (Caddy/Nginx) sur la même machine : écoute
+      # locale uniquement (le proxy est le seul point d'entrée public).
+      - "127.0.0.1:8000:8000"
+    environment:
+      # Mot de passe protégeant l'API et /setup — OBLIGATOIRE si le backend
+      # est exposé sur Internet.
+      CALORIE_PASSWORD: ${CALORIE_PASSWORD:-}
+      # Authentification Claude : l'un des deux (ou via la page /setup) :
+      # - ANTHROPIC_API_KEY        → crédits API (mode "api")
+      # - CLAUDE_CODE_OAUTH_TOKEN  → abonnement Claude Pro/Max (mode "subscription",
+      #                              jeton obtenu avec `claude setup-token`)
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      CALORIE_PROVIDER: ${CALORIE_PROVIDER:-auto}
+      CALORIE_MODEL: ${CALORIE_MODEL:-claude-sonnet-5}
+      CALORIE_SDK_MODEL: ${CALORIE_SDK_MODEL:-sonnet}
+      CALORIE_EFFORT: ${CALORIE_EFFORT:-low}
+    volumes:
+      - calorie-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  calorie-data:
